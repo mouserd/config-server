@@ -10,9 +10,9 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @EnableAutoConfiguration
 @EnableEurekaServer
-public class ConfigServer {
+public class EurekaConfigServer {
 
-    public static void main(String[] args) {
-        SpringApplication.run(ConfigServer.class, args);
+    public static void main(final String[] args) {
+        SpringApplication.run(EurekaConfigServer.class, args);
     }
 }
