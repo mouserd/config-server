@@ -1,0 +1,16 @@
+info:
+  component: Config Server (Local Properties)
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/mouserd/config-repo
+
+logging:
+  level:
+    com.netflix: 'WARN'
+    org.springframework.cloud: 'WARN'
+
+server:
+  port: 8888

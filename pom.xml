@@ -20,26 +20,21 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <start-class>com.pixelus.configserver.EurekaConfigServer</start-class>
+    <start-class>com.pixelus.configserver.ConfigServer</start-class>
     <java.version>1.8</java.version>
   </properties>
 
   <dependencies>
     <dependency>
       <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-eureka-server</artifactId>
-      <version>1.0.0.RELEASE</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-config-server</artifactId>
       <version>1.0.0.RELEASE</version>
     </dependency>
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-config-client</artifactId>
-      <version>1.0.0.RELEASE</version>
-    </dependency>
+    <!--<dependency>-->
+      <!--<groupId>org.springframework.cloud</groupId>-->
+      <!--<artifactId>spring-cloud-config-client</artifactId>-->
+      <!--<version>1.0.0.RELEASE</version>-->
+    <!--</dependency>-->
     <!--<dependency>-->
       <!--<groupId>org.springframework.boot</groupId>-->
       <!--<artifactId>spring-boot-starter-security</artifactId>-->
@@ -65,20 +60,6 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
-        <!-- defined in spring-cloud-starter-parent pom (as documentation hint),
-          but needs to be repeated here -->
-        <configuration>
-          <requiresUnpack>
-            <dependency>
-              <groupId>com.netflix.eureka</groupId>
-              <artifactId>eureka-core</artifactId>
-            </dependency>
-            <dependency>
-              <groupId>com.netflix.eureka</groupId>
-              <artifactId>eureka-client</artifactId>
-            </dependency>
-          </requiresUnpack>
-        </configuration>
       </plugin>
       <plugin>
         <groupId>pl.project13.maven</groupId>

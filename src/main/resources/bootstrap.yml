@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        bootstrap: true
+        git:
+          uri: https://github.com/mouserd/config-repo
