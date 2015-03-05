@@ -3,6 +3,8 @@ spring:
     name: configserver
   cloud:
     config:
+      discovery:
+        enabled: true
       server:
         bootstrap: true
         git:
