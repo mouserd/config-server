@@ -7,7 +7,7 @@
   <artifactId>config-server</artifactId>
   <packaging>jar</packaging>
 
-  <name>spring-cloud-config-server</name>
+  <name>config-server</name>
   <description>spring-cloud-config-server</description>
 
   <parent>
@@ -55,6 +55,7 @@
   </dependencies>
 
   <build>
+    <finalName>${project.name}</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
