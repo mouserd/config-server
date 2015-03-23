@@ -1,5 +1,7 @@
-FROM dockerfile/java:oracle-java8
+FROM exiled/debian-jre8:latest
 MAINTAINER david.mouser@gmail.com
+
 EXPOSE 8888
-CMD java -jar config-server.jar
+
 ADD build/config-server.jar /data/config-server.jar
+CMD java -jar /data/config-server.jar
