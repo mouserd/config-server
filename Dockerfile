@@ -1,4 +1,4 @@
-FROM exiled/debian-jre8:latest
+FROM aflmedia/debian-jre8:latest
 MAINTAINER david.mouser@gmail.com
 
 EXPOSE 8888
