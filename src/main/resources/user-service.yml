@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: user-service
+  jackson:
+    default-property-inclusion: non_null
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
